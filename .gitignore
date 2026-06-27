@@ -1,0 +1,20 @@
+# Secrets — never commit
+.env
+
+# Virtual environments
+.venv/
+.venv-1/
+
+# Claude Code session data
+.claude/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Build artifacts
+dist/
+*.egg-info/

@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langchain-community
+openai
+sqlalchemy
+psycopg2-binary
+pgvector
+presidio-analyzer
+presidio-anonymizer
+spacy
+python-dotenv
+pypdf

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary:        #3B1D66;
+  --primary-dark:   #2D1650;
+  --primary-light:  #F0EBF8;
+  --secondary:      #C18D3C;
+  --secondary-light:#FDF6E9;
+  --secondary-border:#E8D5B0;
+  --bg:             #F8F5FF;
+  --surface:        #FFFFFF;
+  --border:         #E2E8F0;
+  --text:           #1E293B;
+  --text-muted:     #64748B;
+  --crisis:         #DC2626;
+  --crisis-bg:      #FEF2F2;
+  --crisis-border:  #FECACA;
+  --warning-bg:     #FFFBEB;
+  --warning:        #D97706;
+  --success:        #10B981;
+  --shadow-sm:      0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:      0 4px 12px rgba(0,0,0,0.10);
+  --shadow-lg:      0 10px 30px rgba(0,0,0,0.12);
+  --radius:         12px;
+  --radius-sm:      8px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar        { width: 5px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: var(--secondary-border); border-radius: 99px; }
+
+/* Cursor blink used in MessageBubble streaming state */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
